@@ -10,9 +10,9 @@ abstract class Controller {
         else
             echo "arquivo não encontrado. Caminho: " . $arquivo;
     }
-}
 
-/*protected static function isAuthenticated() {
-    if(!isset($_SESSION['user']))
-        header("Location: /login");
-}*/
+    protected static function isAuthenticated() {
+        if(!isset($_SESSION['admin_logged']))
+            header("Location: /login");
+    }
+}

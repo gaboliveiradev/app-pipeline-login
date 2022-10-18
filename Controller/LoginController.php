@@ -19,7 +19,7 @@ class LoginController extends Controller {
 
     public static function logout() {
         if(isset($_GET['exit'])) {
-            unset($_SESSION['usuario']);
+            unset($_SESSION['admin_logged']);
             header("Location: /login");
         }
     }

@@ -1,5 +1,6 @@
 <?php
 use App\Controller\{
+    DashboardController,
     LoginController,
 };
 
@@ -12,6 +13,10 @@ switch($parse_uri) {
 
     case "/login/auth":
         LoginController::auth();
+    break;
+
+    case "/dashboard":
+        DashboardController::index();
     break;
 
     default:

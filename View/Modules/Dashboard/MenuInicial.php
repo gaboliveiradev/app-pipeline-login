@@ -8,5 +8,6 @@
 </head>
 <body>
     <h1>ÁREA PROTEGIDA</h1>
+    <a href="/logout?exit=true">Fazer Loggout</a>
 </body>
 </html>

@@ -11,6 +11,10 @@ switch($parse_uri) {
         LoginController::index();
     break;
 
+    case "/logout":
+        LoginController::logout();
+    break;
+
     case "/login/auth":
         LoginController::auth();
     break;

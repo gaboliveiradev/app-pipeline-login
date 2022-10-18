@@ -16,4 +16,11 @@ class LoginController extends Controller {
         $model->senha = $_POST["senha"];
         $model->auth();
     }
+
+    public static function logout() {
+        if(isset($_GET['exit'])) {
+            unset($_SESSION['usuario']);
+            header("Location: /login");
+        }
+    }
 }

@@ -10,6 +10,10 @@ switch($parse_uri) {
         LoginController::index();
     break;
 
+    case "/login/auth":
+        LoginController::auth();
+    break;
+
     default:
         header("Location: /login");
     break;

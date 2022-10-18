@@ -14,6 +14,7 @@ class LoginController extends Controller {
         $model = new LoginModel();
         $model->email = $_POST["email"];
         $model->senha = $_POST["senha"];
+        $model->remember = isset($_POST["lembrar-de-mim"]);
         $model->auth();
     }
 

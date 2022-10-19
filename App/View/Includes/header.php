@@ -3,20 +3,20 @@
         <button class="navbar-toggler text-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="/dashboard">
             <h5>Jahu Banco de Empregos</h5>
             <!--<img src="./../../View/img/logo.png" alt="mdo" width="52" height="52" class="d-inline-block align-text-top">-->
         </a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item m-3">
-                    <a class="nav-link active text-dark" aria-current="page" href="/">Empresas</a>
+                    <a class="nav-link active text-dark" aria-current="page" href="/empresa">Empresas</a>
                 </li>
                 <li class="nav-item m-3">
-                    <a class="nav-link text-dark" href="/">Curriculos</a>
+                    <a class="nav-link text-dark" href="/curriculo">Curriculos</a>
                 </li>
                 <li class="nav-item m-3">
-                    <a class="nav-link text-dark" href="/">Vagas de Empregos</a>
+                    <a class="nav-link text-dark" href="/vaga-de-emprego">Vagas de Empregos</a>
                 </li>
             </ul>
             <form class="d-flex">

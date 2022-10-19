@@ -21,6 +21,8 @@ class LoginController extends Controller {
     public static function logout() {
         if(isset($_GET['exit'])) {
             unset($_SESSION['admin_logged']);
+            $validade = time() - 3600;
+            setcookie("admin_login", "", $validade, "/", "", false, true);
             header("Location: /login");
         }
     }

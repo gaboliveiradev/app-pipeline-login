@@ -15,15 +15,15 @@ class LoginModel extends Model {
 
         if($data_user) {
             $_SESSION["admin_logged"] = $data_user;
-            if($this->remember) self::remember($this->nome);
+            /*if($this->remember)*/ self::remember($this->email);
             header("Location: /dashboard");
         } else {
             header("Location: /login");
         }
     }
 
-    private static function remember($nome) {
+    private static function remember($value) {
         $validate = strtotime("+1 month");
-        setcookie("admin_login", $nome, $validate, "/", "", false, true);
+        setcookie("admin_login", $value, $validate, "/", "", false, true);
     }
 }

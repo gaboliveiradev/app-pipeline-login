@@ -7,7 +7,8 @@ use App\Model\LoginModel;
 class LoginController extends Controller {
 
     public static function index() {
-        parent::render("Login/FormLogin");
+        $email = (isset($_COOKIE["admin_login"]) ? $_COOKIE["admin_login"] : "");
+        include "./View/Modules/Login/FormLogin.php";
     }
 
     public static function auth() {

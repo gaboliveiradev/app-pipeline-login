@@ -32,7 +32,7 @@
                 <h1 class="h3 mb-3 fw-normal">Jahu Banco de Empregos - Painel Admin</h1>
 
                 <div class="form-floating" class="col-md-6 offset-md-3">
-                    <input name="email" type="text" class="form-control" id="email" placeholder="name@example.com">
+                    <input name="email" value="<?= $email ?>" type="text" class="form-control" id="email" placeholder="name@example.com">
                     <label for="floatingInput">Email</label>
                 </div>
                 <br>

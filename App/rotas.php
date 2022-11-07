@@ -3,6 +3,7 @@ use App\Controller\{
     CurriculoController,
     DashboardController,
     EmpresaController,
+    FuncionarioController,
     LoginController,
     VagaEmpregoController,
 };
@@ -22,6 +23,16 @@ switch($parse_uri) {
 
     case "/login/auth":
         LoginController::auth();
+    break;
+
+    // Rotas Funcionário
+
+    case "/funcionario/form":
+        FuncionarioController::form();
+    break;
+
+    case "/funcionario":
+        FuncionarioController::index();
     break;
 
     // Rotas Dashboard

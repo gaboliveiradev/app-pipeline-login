@@ -9,6 +9,6 @@ class FuncionarioController extends Controller {
     }
 
     public static function form() {
-        
+        parent::render("Funcionario/Form");
     }
 }

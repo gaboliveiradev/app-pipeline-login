@@ -35,6 +35,10 @@ switch($parse_uri) {
         FuncionarioController::index();
     break;
 
+    case "/funcionario/form/save":
+        FuncionarioController::save();
+    break;
+
     // Rotas Dashboard
 
     case "/dashboard":

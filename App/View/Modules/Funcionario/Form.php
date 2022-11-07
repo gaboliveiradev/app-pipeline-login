@@ -7,7 +7,7 @@
     <?php include "./View/Includes/Bootstrap/css_config.php" ?>
     <title>Jahu Banco de Empregos | Painel Admin</title>
     <style>
-        body {
+        main {
             width: 100vw;
             height: 100vh;
             display: flex;
@@ -26,9 +26,13 @@
     </style>
 </head>
 <body class="text-center flex">
-    <main class="container flex frm_login">
-        <div class="form-signin flex">
-            <form action="/login/auth" method="POST">
+    <header>
+        <?php include "./View/Includes/header.php" ?>
+    </header>
+
+    <main class="container flex">
+        <div class="form-signin flex frm_login">
+            <form action="/funcionario/form/save" method="POST">
                 <h1 class="h3 mb-3 fw-normal">Cadastrar Funcionários</h1>
 
                 <div class="form-floating" class="col-md-6 offset-md-3">

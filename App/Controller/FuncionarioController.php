@@ -8,6 +8,10 @@ class FuncionarioController extends Controller {
 
     }
 
+    public static function save() {
+        
+    }
+
     public static function form() {
         parent::render("Funcionario/Form");
     }

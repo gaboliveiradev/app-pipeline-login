@@ -4,7 +4,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <a class="navbar-brand" href="/dashboard">
-            <h5>Jahu Banco de Empregos</h5>
+            <h5>Banco de Empregos</h5>
             <!--<img src="./../../View/img/logo.png" alt="mdo" width="52" height="52" class="d-inline-block align-text-top">-->
         </a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -16,7 +16,16 @@
                     <a class="nav-link text-dark" href="/curriculo">Curriculos</a>
                 </li>
                 <li class="nav-item m-3">
-                    <a class="nav-link text-dark" href="/vaga-de-emprego">Vagas de Empregos</a>
+                    <a class="nav-link text-dark" href="/vaga-de-emprego">Vagas Empreg.</a>
+                </li>
+                <li class="nav-item m-3 dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Funcionário
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="/funcionario/form">Cadastrar</a></li>
+                      <li><a class="dropdown-item" href="/funcionario">Listar</a></li>
+                    </ul>
                 </li>
             </ul>
             <form class="d-flex">

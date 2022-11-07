@@ -13,6 +13,7 @@ class FuncionarioModel {
     }
 
     public function getAllRowsFuncionario() {
-
+        $dao = new FuncionarioDAO();
+        return $dao->selectAllFuncionarios();
     } 
 }

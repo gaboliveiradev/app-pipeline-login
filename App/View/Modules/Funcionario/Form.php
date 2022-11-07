@@ -45,7 +45,7 @@
                     <input name="senha" type="password" class="form-control" id="Senha" placeholder="Password">
                     <label for="floatingPassword">Senha</label>
                 </div>
-
+                <br>
                 <button type="submit" class="btn btn-lg btn-primary">Cadastrar</button>
                 <p class="mt-5 mb-3 text-muted">&copy; 2022–2023</p>
             </form>
